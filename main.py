@@ -73,7 +73,7 @@ window.config(padx=40, pady=20, bg=BACKGROUND)
 
 # TOMATO & TEXT
 canvas = Canvas(width=200,height=232, bg=BACKGROUND, highlightthickness=0)
-tomato_image = PhotoImage(file="tomato.png")
+tomato_image = PhotoImage(file="images/tomato.png")
 canvas.create_image(100, 116, image=tomato_image)
 canvas.grid(column=1, row=1)
 
@@ -82,21 +82,21 @@ timer_text= canvas.create_text(102, 150, text="00:00", fill="white", font=(FONT_
 # TITLE
 title_canvas = Canvas(width=250,height=80, bg=BACKGROUND, highlightthickness=0)
 
-title_timer = PhotoImage(file="title_timer.png")
-title_break = PhotoImage(file="title_break.png")
-title_work = PhotoImage(file="title_work.png")
+title_timer = PhotoImage(file="images/title_timer.png")
+title_break = PhotoImage(file="images/title_break.png")
+title_work = PhotoImage(file="images/title_work.png")
 
 title_image = title_canvas.create_image(125, 30, image=title_timer)
 title_canvas.grid(column=1, row=0)
 
 # BUTTONS
 button_start = Button(command=start_timer)
-button_start_image = PhotoImage(file="button_start.png")
+button_start_image = PhotoImage(file="images/button_start.png")
 button_start.config(image=button_start_image, highlightthickness=0, bd=0, relief="flat", bg=BACKGROUND, activebackground=BACKGROUND)
 button_start.grid(column=0, row=2)
 
 button_reset = Button(command=reset_timer)
-button_reset_image = PhotoImage(file="button_reset.png")
+button_reset_image = PhotoImage(file="images/button_reset.png")
 button_reset.config(image=button_reset_image, highlightthickness=0, bd=0, relief="flat", bg=BACKGROUND, activebackground=BACKGROUND)
 button_reset.grid(column=2, row=2)
 
